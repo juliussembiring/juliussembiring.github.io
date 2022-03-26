@@ -1,0 +1,367 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "4. Problems (1).ipynb",
+      "provenance": [],
+      "collapsed_sections": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/juliussembiring/juliussembiring.github.io/blob/main/4_Problems_(1).ipynb%20(19%20march%202022)\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "bNqN94yyIeU5"
+      },
+      "source": [
+        "1. Diberikan sebuah tuple sebagai berikut, ambil potongan tuple dari elemen ke-3 sampai elemen ke-8\n",
+        "    * Output: (53, 44, 64, 21, 94, 39)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "N1xDQQEu2I52",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "8d09f146-2b8a-46e1-bc80-ca36ffbac399"
+      },
+      "source": [
+        "Tuple_1 = (12,23,53,44,64,21,94,39,10,63,54,75,98,11)\n",
+        "from typing import Tuple\n",
+        "Tuple_1 = (12,23,53,44,64,21,94,39,10,63,54,75,98,11)\n",
+        "Tuple_1[2:8]"
+      ],
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "(53, 44, 64, 21, 94, 39)"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 2
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "5UuAmYzbIjd0"
+      },
+      "source": [
+        "2. Balik urutan dari tuple berikut:\n",
+        "    * output: `(55,45,35,25,15)`"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "hFe-QSZqIite",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "a57282d6-41a6-4ff0-cfb0-c4e1ddd5d02b"
+      },
+      "source": [
+        "tuple_2 = (15,25,35,45,55)\n",
+        "tuple_2 = (15,25,35,45,55)\n",
+        "tuple_2[::-1]"
+      ],
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "(55, 45, 35, 25, 15)"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 3
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "5w3Pi_rxHkxk"
+      },
+      "source": [
+        "3. Diberikan sebuah list, urutkanlah list berikut secara alfabet:\n",
+        "\n",
+        "expected output = `['apple','ball','covariance','determinant','exponential','factorization']`"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "4aj2dbqaHkCs",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "119e67e9-b95f-480b-a381-52d6846e80f4"
+      },
+      "source": [
+        "list_1 = ['apple','covariance', 'ball', 'factorization', 'exponential', 'determinant']\n",
+        "list_1.sort(reverse=False)\n",
+        "print(list_1)"
+      ],
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['apple', 'ball', 'covariance', 'determinant', 'exponential', 'factorization']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "sZtaVTO1KKKZ"
+      },
+      "source": [
+        "4. Diberikan sebuah list, ubahlah setiap elemennya menjadi nilai kuadratnya:\n",
+        "    * output: [4,9,16,25,36,49]"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "O56WX0QFL50-",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "075a679f-89be-4e1f-e450-895daa5c2e4f"
+      },
+      "source": [
+        "list_a = [2,3,4,5,6,7]\n",
+        "for i in range(len(list_a)):\n",
+        "  list_a[i]**= 2\n",
+        "list_a"
+      ],
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[4, 9, 16, 25, 36, 49]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 5
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "P3--R09aL6t0"
+      },
+      "source": [
+        "5. Buatlah list berisi deret fibonacci dari list yang disediakan, hingga jumlah elemen 15. \n",
+        "\n",
+        "    * Output: [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377]"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "orcWerrUL_wP",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "1078791d-4f81-4bf3-e31f-993d02ca330c"
+      },
+      "source": [
+        "banyak_bilangan = int(input('masukan banyaknya bilangan: '))\n",
+        "count = 0\n",
+        "n1 = 0\n",
+        "n2 = 1\n",
+        " \n",
+        "list_fibonacci = []\n",
+        "while count < banyak_bilangan:\n",
+        "   list_fibonacci.append(n1)\n",
+        "   bilangan_terakhir = n1 + n2\n",
+        "   n1 = n2\n",
+        "   n2 = bilangan_terakhir\n",
+        "   count += 1\n",
+        "   \n",
+        "print(list_fibonacci)\n",
+        " \n"
+      ],
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "masukan banyaknya bilangan: 15\n",
+            "[0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "list_1=[0,1]\n",
+        "for i in range(1,14):\n",
+        "  list_1.append(list_1[i] + list_1[i-1])\n",
+        "print(list_1)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "T3euCN6tNRGz",
+        "outputId": "3fa6a8e4-1233-4db4-8a97-177f0b7df995"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "wm4VZKSwrlFb"
+      },
+      "source": [
+        "6. Diberikan sebuah list, hapuslah semua elemen bernilai 20 dari list berikut:"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "pYZrZ1Ovrmd6",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "7293211d-e454-43a4-d014-9c9b211e6b51"
+      },
+      "source": [
+        "list1 = [5, 20, 15, 20, 25, 50, 20, 20, 25, 35, 65, 20, 30, 10, 20, 20]\n",
+        "while True:\n",
+        "  if (20 in list1): \n",
+        "    list1.remove(20)\n",
+        "  else:\n",
+        "    break\n",
+        "print(list1)\n"
+      ],
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[5, 15, 25, 50, 25, 35, 65, 30, 10]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "SoDC4KOLrnyI"
+      },
+      "source": [
+        "7. Gabungkanlah kedua list yang berurutan secara index:\n",
+        "```\n",
+        "list1 = [\"Sa\", \"su\", \"ma\", \"ta\"] \n",
+        "list2 = [\"ya\", \"ka\", \"kan\", \"hu\"]\n",
+        "```\n",
+        "\n",
+        "output:\n",
+        "```\n",
+        "['Saya','suka','makan','tahu']\n",
+        "```"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "DC_ux7aIprLo",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "06240250-d727-4a7e-c820-ef85ca7c3a71"
+      },
+      "source": [
+        "list1 = [\"Sa\", \"su\", \"ma\", \"ta\"] \n",
+        "list2 = [\"ya\", \"ka\", \"kan\", \"hu\"]\n",
+        "zipped = zip(list1, list2)\n",
+        "print(list(zipped))\n",
+        "\n"
+      ],
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[('Sa', 'ya'), ('su', 'ka'), ('ma', 'kan'), ('ta', 'hu')]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "list1 = [\"Sa\", \"su\", \"ma\", \"ta\"] \n",
+        "list2 = [\"ya\", \"ka\", \"kan\", \"hu\"]\n",
+        "list3 = []\n",
+        "\n",
+        "for i in range(len(list1)):\n",
+        "  list3.append(list1[i] + list2[i])\n",
+        "print(list3)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "dhKhzNnMPv1X",
+        "outputId": "e9ec7012-6f4d-46f5-e114-7d3bea69912f"
+      },
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['Saya', 'suka', 'makan', 'tahu']\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
